@@ -1,0 +1,41 @@
+.shop-header{
+    padding: 70px;
+ background-color: #3E6259;
+ margin-top: -20px;
+
+}
+.shop-header h2{
+    font-size: 36px;
+}
+.shop-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding: 100px;
+  margin-left: 30px;
+}
+.shop-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: -30px;
+     
+}
+.shop-grid img{
+    width: 80%;
+    background-color: white;
+     padding: 20px;
+}
+.shop-grid h4{
+    color: #444;
+    margin-left: 30px;
+}
+.shop-grid p{
+    color: #444;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+.shop-card:hover {
+  background-color: #dce5e2;
+ border-radius: 25px;
+   transform: translateY(-5px);
+}

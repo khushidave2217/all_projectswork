@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 10px;
+        }
+
+        .navbar .nav {
+            color: white;
+            list-style-type: none;
+            display: flex;
+            text-align: right;
+            gap: 30px;
+            justify-content: flex-end;
+            font-size: 20px;
+        }
+
+        .nav li {
+            position: relative;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav li:hover {
+            color: orangered;
+        }
+
+        .nav li ul {
+            list-style-type: none;
+            display: none;
+            max-width: 150px;
+            padding: 10px 0;
+            background-color: gray;
+        }
+
+        .nav li:hover ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            padding: 10px 20px;
+        }
+
+        .nav li ul li:hover {
+            background-color: orangered;
+            color: black;
+        }
+
+        #box {
+            margin: 15px;
+            float: right;
+            width: 300px;
+            height: 90%;
+        }
+         .about-main h6{
+            font-size: 30px;
+            color: orange;
+            text-align: center;
+            margin-top: 40px;
+        }
+      
+       .branch-container{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+       }
+       .about-content img{
+        margin-top: 22px;
+        height: auto;
+        width: 80%;
+        border: 4px solid orange;
+        border-radius: 25%;
+       }
+       .about-content p{
+        font-size: 23px;
+        color: orangered;
+       }
+        .footer-content {
+      display: flex;
+      text-align: center;
+      padding: 16px;
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      justify-content: space-around;
+    }
+
+    .footer-main h2 {
+      font-size: 27px;
+      color: orange;
+    }
+
+    .footer-main p {
+      line-height: 1.9rem;
+      text-align: left;
+      font-size: 17px;
+    }
+
+    .footer-main .main {
+      list-style-type: none;
+      line-height: 2.4rem;
+      font-size: 17px;
+    }
+
+    .footer-main .main :hover {
+      color: black;
+      border: 1px solid orange;
+      background-color: orange;
+    }
+
+    .footer-main .main li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-main i {
+      font-size: 18px;
+      margin: 10px;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: orange;
+      color: black;
+      border-radius: 50%;
+    }
+
+    .footer-main i:hover {
+      background-color: white;
+      color: orange;
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="./restaurant catering or food brand logo.jpg" alt="">
+        </div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery
+                <ul>
+                    <li>Italian</li>
+                    <li>Punjabi</li>
+                    <li>South Indian</li>
+                </ul>
+            </li>
+            <li>Blog</li>
+            <li><i class="fa-solid fa-list"></i></li>
+        </ul>
+    </div>
+
+
+    <div class="about-container">
+        <img id="box" src="./Innovative Chef with a Modern Flair.jpg" alt="">
+
+        <h2 style="color: orange; margin-top: 40px; font-size: 32px; text-align: center;">Welcome to Zaika Junction</h2>
+        <p style="font-size: 23px; line-height: 1.6; margin-top: 50px; text-indent: 50px;">
+            Welcome to Zaika Junction, where passion meets the plate. Nestled in the heart of the city, we bring you a
+            warm and inviting dining experience filled with vibrant flavors and memorable hospitality. Our mission is
+            simple — to serve delicious food made with love, fresh ingredients, and a dash of creativity.
+
+                  At Zaika Junction, every dish tells a story. Whether you're joining us for a hearty brunch, a romantic
+            dinner, or a family celebration, we promise an experience that satisfies both your taste buds and your
+            heart. We believe in the power of good food to bring people together, and that's what inspires us every day.
+            <br>
+
+            With over 15 years of culinary expertise, Chef Aarav Patel is the heart and soul behind our kitchen. 
+           Whether it’s a delicate dessert or a bold entrée, his touch
+            ensures every bite is unforgettable.
+        </p>
+    </div>
+
+    <div class="about-main">
+        <h6>Our Branches</h6>
+        <div class="branch-container">
+        <div class="about-content">
+            <img src="./2.jpg" alt="">
+            <p>Surat</p>
+        </div>
+
+         <div class="about-content">
+            <img src="./3.jpg" alt="">
+            <p>Vadodra</p>
+        </div>
+
+         <div class="about-content">
+            <img src="./4.jpg" alt="">
+            <p>Ahmedabad</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <h2>Contact us:</h2>
+        <P><b>Address:</b>Main Road, Ahmedabad, Gujarat – 380001 <br>
+          <b>Phone No: </b>+91 9878956798 <br>
+          (Available: Mon – Sat | 10:00 AM to 7:00 PM) <br>
+          <b>Email: </b> info@gmail.com <br>
+          <b>Website: </b>www.example.com
+        </P>
+      </div>
+
+      <div class="footer-main">
+        <h2>Quick links:</h2>
+        <P>
+        <ul class="main">
+          <li><a href="nav_dropdown.html">Home</a></li>
+          <li>About</li>
+          <li>Gallery</li>
+          <li>Blog</li>
+        </ul>
+        </P>
+      </div>
+
+      <div class="footer-main">
+        <h2>Social Media:</h2>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.learn-container{
+    margin-top: -10px;
+}
+.learn-container h2{
+    margin-top: 20px;
+    margin-left: 350px;
+    color: darkcyan;
+    font-size: 15px;
+}
+.learn-container p{
+    margin-left: 350px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.learn-left img{
+    height: 85vh;
+    margin-left: -2px;
+    margin-top: -110px;
+}
+.learn-right{
+    margin-left: 340px;
+    margin-top: -230px;
+}
+.learn-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+.learn-content:hover{
+  background-color: darkcyan;
+  color: white;
+
+}
+.learn-content:hover .learn-text h4 {
+  color: white;
+}
+.learn-content:hover .learn-text .p-learn {
+  color: white;
+}
+.learn-content img {
+  width: 60px; 
+  height: 30px;
+}
+
+.learn-text h4 {
+  color: darkcyan;
+  font-size: 16px;
+  margin: 0;
+}
+.learn-text .p-learn {
+  font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  margin-right: 20px;
+}

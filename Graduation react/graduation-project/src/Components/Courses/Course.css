@@ -1,0 +1,124 @@
+.courses-section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.courses-section h6 {
+    color: darkcyan;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.course-p {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: -20px;
+
+}
+
+.course-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.courses-card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.courses-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-rate {
+    color: #007777;
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.course-header img {
+    width: 60px;
+    height: 60px;
+}
+
+.course-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+}
+
+.course-rate {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.course-rate img {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+}
+
+.courses-card h6 {
+    font-size: 14px;
+    color: gray;
+    margin: 8px 0;
+}
+
+.courses-card h5 {
+    font-size: 14px;
+    color: #222;
+    margin: 8px 0;
+}
+
+.courses-card p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.courses-card button {
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.courses-card button:hover {
+    background-color: white;
+    color: #007777;
+}
+
+.course-detail {
+    display: flex;
+    justify-content: left;
+}
+
+.course-detail img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.course-detail h6 {
+    margin-left: 30px;
+}

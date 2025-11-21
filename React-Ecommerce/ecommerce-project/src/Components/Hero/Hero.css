@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box{
+    float: right;
+    /* margin: 15px; */ 
+    height: 400px;
+    width: 50%;
+    margin-top: 30px;
+   
+}
+.hero-section h2{
+   padding-top: 110px;
+   color: black;
+}
+.hero-section p{
+    margin-top: 20px;
+}
+.hero-section button{
+    margin-top: 20px;
+    background-color:  orangered;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 6px;
+    margin-left: -190px;
+    border-radius: 10px;
+}

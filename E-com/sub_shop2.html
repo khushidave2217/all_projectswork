@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px;
+            height: auto;
+            margin-right: -8px;
+        }
+
+        .logo span {
+            color: orangered;
+        }
+
+        .nav-main {
+            background-color: white;
+
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            margin-right: 40px;
+        }
+
+        .nav li {
+            font-size: 20px;
+        }
+
+        .nav li:hover {
+            color: orangered;
+        }
+
+        #box {
+            float: left;
+            height: 100%;
+            width: 300px;
+            margin: 20px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+       
+
+        .sub-shop h3 {
+            font-size: 27px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .sub-shop p {
+            font-size: 20px;
+            margin-top: 11px;
+            font-weight: bold;
+            margin-left: 80px;
+        }
+
+
+
+        .dropdown-toggle {
+            background-color: transparent;
+            color: black;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: orangered;
+            color: #fff;
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            min-width: 200px;
+            padding: 10px 0;
+        }
+
+        .dropdown-item {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #333;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f2f2f2;
+            color: orangered;
+        }
+        .cart{
+            margin-top: 15px;
+            background-color: orangered;
+            padding: 12px;
+            border: none;
+            color: white;
+            width: 200px;
+        }
+    
+    .image-gallery{
+        display: flex;
+        gap: 10px;
+        margin-top:-5px;
+    }
+    .image-gallery img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .image-gallery img:hover{
+        border-color: orangered;
+    }
+</style>
+
+   
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="logo">
+            <img src="./download (1).jpg" alt="">
+            <h1>rymo<span>.</span></h1>
+        </div>
+        <div class="nav-main">
+            <ul class="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bucket"></i>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="sub-shop">
+        <img id="box" src="./s3.jpg" alt=""> <br><br><br>
+
+        <div class="image-gallery">
+    <img src="./s3.jpg" class="thumb" alt="">
+    <img src="./subwallet2.jpg" class="thumb" alt="">
+    <img src="./subwallet small.jpg" class="thumb" alt="">
+    <img src="./subwallet.jpg" class="thumb" alt="">
+</div>
+
+        <h3>Fashion Wallet</h3>
+        <p>$139.00</p>
+        <div class="dropdown">
+            <button id="sizeDropdownBtn" class="btn btn-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                select size
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Small</a></li>
+                <li><a class="dropdown-item" href="#">Medium</a></li>
+                <li><a class="dropdown-item" href="#">Large</a></li>
+               
+            </ul>
+        </div>
+        <button class="cart" onclick="addtocart()">ADD TO CART</button>
+        <p style="font-size: 15px; font-weight: normal; margin-right: 20px;"> &nbsp;Stay ahead in style with our trendy and comfortable fashion T-shirt. Designed for those who love to make a statement, this T-shirt blends modern aesthetics with everyday comfort. Made from high-quality cotton blend fabric, it feels soft on the skin and keeps you cool throughout the day. The eye-catching prints and stylish fit make it perfect for casual outings, college days, hangouts, or even travel. </p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+   const dropdownItem = document.querySelectorAll('.dropdown-item')
+   const dropdownBtn = document.getElementById('sizeDropdownBtn')
+
+   dropdownItem.forEach(item =>{
+    item.addEventListener('click', function(){
+        dropdownBtn.textContent = this.textContent
+    })
+   })
+
+  const mainImg = document.getElementById('box')
+  const thumbs = document.querySelectorAll('.thumb')
+
+  thumbs.forEach(t=>{
+    t.addEventListener("click",function(){
+        mainImg.src = this.src
+    })
+  })
+
+   function addtocart(){
+    alert("Item successfully Add!")
+   }
+</script>
+
+</html>

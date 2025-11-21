@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+             box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px;
+            height: auto;
+            margin-right: -8px;
+        }
+
+        .logo span {
+            color: orangered;
+        }
+
+        .nav-main {
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            margin-right: 40px;
+        }
+
+        .nav li {
+            font-size: 20px;
+        }
+
+        .nav li:hover {
+            color: orangered;
+        }
+         .nav li a{
+            text-decoration: none;
+            color: black;
+        }
+        #box{
+            float: right;
+            width: 50%;
+            height: 430px;
+            margin: 20px;
+        }
+        .contact-main h3{
+            margin-top: 43px;
+            margin-left: 32px;
+            font-size: 25px;
+        }
+        .contact-main p{
+            margin-left: 36px;
+            font-size: 15px;
+            margin-top: 70px;
+        }
+         .footer-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background-color: grey;
+            padding: 80px;
+        }
+        .footer p{
+            font-size: 20px;
+            margin-left: 1px;
+        }
+        .footer h6{
+            font-size: 24px;
+        }
+        .footer ul li{
+            list-style-type: none;
+            margin: 10px;
+        }
+        .footer h2{
+            margin-top: -80px;
+        }
+        .footer h1{
+            margin-top: -120px;
+            font-size: 25px;
+        }
+        </style>
+</head>
+<body>
+      <div class="nav-container">
+        <div class="logo">
+            <img src="./download (1).jpg" alt="">
+            <h1>rymo<span>.</span></h1>
+        </div>
+        <div class="nav-main">
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                 <li><a href="shop.html">Shop</a></li>
+                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bucket"></i>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="contact-main">
+       <iframe id="box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.748423512!2d72.41492510525848!3d23.020474104691324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1754737285103!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3>Visit one of our agency locations or contact us today</h3>
+        <p>Head Office <br> <br>
+      <i class="fa-solid fa-book"></i> 56 Glassford Street Glasgow Gl luL New York <br> <br>
+      <i class="fa-solid fa-envelope"></i> contact@exmaple.com <br> <br>
+    <i class="fa-solid fa-phone"></i> +91 9878930789 <br><br>
+      <i class="fa-regular fa-clock"></i> Monday to Saturday </p> 
+    </div>
+</body>
+</html>

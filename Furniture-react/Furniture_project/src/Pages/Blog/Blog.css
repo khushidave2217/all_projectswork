@@ -1,0 +1,40 @@
+.blog-header{
+    padding: 70px;
+ background-color: #3E6259;
+ margin-top: -20px;
+ font-size: 20px;
+
+}
+.blog-container{
+   margin-top: 40px;
+   margin-left: 40px;
+   margin: 40px;
+}
+.blog-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.blog-main p{
+    color: #444;
+}
+.blog-main img{
+    width: 100%;
+}
+.testimonial-card{
+    margin-top: 30px;
+}
+.testi-img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-left: 36px;
+     border: 3px solid #4caf50;
+}
+.testimonial-p{
+     font-size: 13px;
+  color: #444;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}

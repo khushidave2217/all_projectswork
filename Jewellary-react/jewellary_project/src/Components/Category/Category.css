@@ -1,0 +1,147 @@
+.category-container {
+    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-main-left,
+.category-main-right {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.category-main-left h3{
+    position: absolute;
+    left: 320px;
+    bottom: 140px;
+    font-size: 25px;
+}
+.category-main-left button{
+    position: absolute;
+      left: 320px;
+    bottom: 125px;
+    font-size: 16px;
+    background-color: #c59d5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+
+}
+.category-main-right button{
+    background-color: #c59d5f;
+    position: absolute;
+    left: 240px;
+    bottom: 190px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 15px;
+}
+.category-main-left img,
+.category-main-right img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.category-main-right h3{
+    position: absolute;
+     left: 230px;
+    bottom: 210px;
+    font-size: 15px;
+
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-main-left,
+.category-main-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-main-left img{
+     width: 100%;
+  max-width: 610px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 60vh;
+}
+.category-main-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.category-content{
+    position: absolute;
+    top: 180px;
+    left: 200px;
+}
+.category-content h6{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.category-content h5{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.category-content button{
+  position: absolute;
+  bottom:-3px;
+  margin-left: -240px;
+}
+
+.category-content1 h6{
+     margin-top: -220px;
+     margin-left: 180px;
+     font-size: 15px;
+     font-weight: 300;
+}
+.category-content2 h3{
+  margin-top: -20px;
+}
+.category{
+  position: absolute;
+  bottom: 70px;
+  left: -25px;
+}
+.category h3{
+  font-size: 14px;
+  font-weight: 300;
+}
+.category h5{
+  margin-top: -210px;
+  margin-left: 230px;
+  font-size: 25px;
+}
+.category button{
+ white-space: nowrap; 
+  display: inline-block; 
+  text-align: center; 
+   background-color: #c59d5f;
+    position: absolute;
+    left: 230px;
+    bottom: 145px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 15px;
+}

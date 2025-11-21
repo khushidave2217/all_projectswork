@@ -1,0 +1,62 @@
+.header-section {
+  display: flex;
+  margin-left: -40px;
+  margin-top: 110px;
+  flex-wrap: wrap; 
+  padding: 0 20px; 
+}
+
+.header-section-left {
+  flex: 1; 
+  min-width: 300px; 
+  line-height: 1.4;
+}
+
+.header-section-left h2 {
+  font-size: 21px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: -180px;
+}
+
+.header-section-left h1 {
+  font-size: 45px;
+  margin: 0;
+  margin-top: -40px;
+}
+
+.header-section-left span {
+  font-size: 45px;
+  color: yellow;
+}
+
+.header-section-left .h1-sub {
+  font-size: 25px;
+  margin-top: -14px;
+}
+
+.header-section-left p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 59px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+.header-section-left button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -168px;
+}
+
+.header-section-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.header-section-right img {
+  width:50%;
+  height: 290px;
+  margin-top: -15px;
+}

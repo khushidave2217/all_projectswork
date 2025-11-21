@@ -1,0 +1,115 @@
+.design-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 80px 100px;
+  background-color: #f5f7f6;
+}
+
+
+.design-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dots {
+  position: absolute;
+  top: -40px;
+  left: -80px;
+  width: 120px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.design-images {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.img-box {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.big {
+  width: 250px;
+  height: 320px;
+  margin-left: -30px;
+}
+
+.small {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  right: -190px;
+  border-radius: 20px;
+}
+
+.small.top {
+  top: -30px;
+}
+
+.small.bottom {
+  bottom: -15px;
+}
+
+.design-right {
+  max-width: 450px;
+}
+
+.design-right h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.design-right p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.design-right ul {
+  list-style-type: disc;
+  margin-left: 10px;
+  color: #444;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.explore-btn {
+  background-color: #444;
+  color: #fff;
+  padding: 12px 20px;
+  margin-left: 32px;
+  margin-top: -20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #333;
+}

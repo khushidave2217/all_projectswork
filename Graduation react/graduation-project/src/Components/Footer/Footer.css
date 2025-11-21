@@ -1,0 +1,58 @@
+.footer-container{
+    margin-top: 65px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-height: 120vh;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.footer h1{
+    font-size: 23px;
+}
+.footer h6{
+    margin-top: -10px;
+    color: darkcyan;
+}
+.footer p{
+    font-size: 15px;
+}
+.footer .icon{
+    color: darkcyan;
+    margin: 8px;
+}
+.footer h3{
+    margin-left: 34px;
+}
+.ul-footer li{
+    list-style-type: none;
+    margin: 6px;
+}
+.ul-footer .icon2{
+    color: darkcyan;
+    width: 10%;
+    margin-left: -10px;
+}
+.ul-footer .icon3{
+    color: darkcyan;
+    width: 5%;
+}
+.footer-question{
+    margin-top: -4px;
+}
+.footer p{
+    margin-left: 18px;
+}
+.footer h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.footer h4{
+    font-weight: 400;
+    margin-top: -2px;
+    margin-left: 15px;
+}

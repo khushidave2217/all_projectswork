@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #001f2d;
+
+        }
+
+        .home-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #001f2d;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .ul-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .ul-nav li:hover {
+            color: aqua;
+        }
+
+        .ul-nav li a {
+            color: white;
+            text-decoration: none;
+            transition: .5s ease;
+            opacity: 0;
+            animation: slideLeft 1s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+        }
+
+        .home-page {
+            margin-top: 160px;
+            margin-right: 290px;
+        }
+
+        .home-page h3 {
+            font-weight: 700;
+            font-size: 26px;
+            margin-left: 65px;
+            color: #fff;
+            margin-top: 23px;
+        }
+
+        .home-page h3 span {
+            color: aqua;
+        }
+
+        .home-page #box {
+            float: right;
+            margin: 15px;
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            margin-top: -35px;
+        }
+
+        .home-icon {
+            margin-left: 40px;
+            margin-top: 30px;
+            padding: 12px;
+        }
+
+        .home-icon2 {
+            margin-left: -440px;
+            margin-top: 30px;
+            padding: 12px;
+        }
+
+        .home-icon2 i {
+            color: aqua;
+            font-size: 27px;
+        }
+
+        .home-icon i {
+            color: aqua;
+            font-size: 27px;
+        }
+
+        .about-container {
+            margin-top: 150px;
+            margin-left: 34px;
+        }
+
+        .about-container #box {
+            float: left;
+            margin: 15px;
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+        }
+
+        .about-container h1 {
+            padding: 42px;
+            color: #fff;
+            font-size: 42px;
+            opacity: 0;
+            animation: slideRight 1s ease forwards;
+        }
+
+        .about-container h6 {
+            color: #fff;
+            font-size: 22px;
+            opacity: 0;
+            animation: slideRight 1s ease forwards;
+
+
+        }
+
+        .about-container h1 span {
+            color: aqua;
+        }
+
+        .services-container {
+            margin-top: 25px;
+            margin-left: 23px;
+            margin-right: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .services-container .services-main {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.336);
+            color: #fff;
+            box-shadow: 3px 3px 3px 4px darkblue;
+            border-radius: 25px;
+            opacity: 0;
+            animation: slideRight 1.5s ease forwards;
+        }
+
+        .services-main h1 {
+            font-size: 23px;
+            margin-top: 34px;
+            margin-left: 23px;
+        }
+
+        .services-main i {
+            padding: 5px;
+            font-size: 45px;
+            color: aqua;
+        }
+
+        .services-main p {
+            font-size: 16px;
+        }
+
+        .progress {
+            height: 15px;
+            width: 50%;
+            border-radius: 20px;
+            background-color: #00334d;
+            /* Dark blue background */
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, aqua, #00ffcc);
+            font-weight: bold;
+            color: #001f2d;
+            border-radius: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 50px;
+            gap: 40px;
+        }
+
+        .skills-main {
+            flex: 1;
+            padding: 25px;
+            border-radius: 20px;
+            opacity: 0;
+            animation: slideTop 1s ease forwards;
+            color: #fff;
+        }
+
+        .skills-main h1 {
+            margin-bottom: 20px;
+        }
+
+        .skills-main i {
+            font-size: 28px;
+            color: aqua;
+            margin-right: 10px;
+        }
+
+        .project-container {
+            display: flex;
+            margin: 25px;
+            justify-content: space-between;
+            text-align: center;
+            gap: 20px;
+            animation: slideBottom 1s ease forwards; 
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            margin-left: -130px;
+            text-align: center;
+            margin-top: 150px;
+            animation: slideBottom 1s ease forwards;
+        }
+
+        .contact-main input {
+            padding: 8px 100px;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        .contact-main textarea {
+            padding: 5px 110px;
+        }
+
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideTop {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideBottom {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-container">
+        <div class="logo">
+            <h2>Portfolio.</h2>
+        </div>
+
+        <div class="home-nav">
+            <ul class="ul-nav">
+                <li><a href="#home" style="--i:1">Home</a></li>
+                <li><a href="#about" style="--i:2">About</a></li>
+                <li><a href="#service" style="--i:3">Services</a></li>
+                <li><a href="#skill" style="--i:4">Skills</a></li>
+                <li><a href="#project" style="--i:5">Project</a></li>
+                <li><a href="#contact" style="--i:6">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="home-page" id="home">
+        <img id="box" src="./WhatsApp Image 2025-08-27 at 5.56.22 PM.jpeg" alt="">
+        <h6
+            style="color: #fff; margin-left: 65px; font-size: 20px; margin-top: -30px; opacity: 0; animation: slideRight 1s ease forwards; animation-delay: 1s;">
+            Hello,It's Me</h6>
+        <h1
+            style="color: #fff; margin-left: 65px; font-size: 32px; opacity: 0; animation: slideRight 1s ease forwards; animation-delay: 1s;">
+            Dave Khushi</h1>
+        <h3 style="opacity: 0; animation: slideRight 1s ease forwards; animation-delay: 1s;">And I'am <span
+                class="text"></span></h3>
+
+        <p
+            style="color: #fff; margin-left: 65px; margin-top: 18px; font-size: 17px; opacity: 0;   animation: slideLeft 1s ease forwards; animation-delay: 1.5s;">
+            I'am MernStack Developer Currently
+            I Can Join Tops Technology <br>Expertise is to create and website design,Fronted design, and Many more...
+        </p>
+
+
+        <div class="home-icon">
+            <a href="" style="--i:7"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" style="--i:8"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" style="--i:9"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" style="--i:10"><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <button 
+            style="background-color: aqua; border-radius: 12px; padding: 10px; border: none; margin-top: 13px; margin-left: 54px; opacity: 0; animation: slideTop 1s ease forwards; animation-delay: 2s;">More
+            About Me</button>
+    </div>
+
+
+    <div class="about-container" id="about">
+        <img id="box" src="./WhatsApp Image 2025-08-27 at 5.56.22 PM.jpeg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About <span>Me</span></h1>
+        <h6 style="margin-top: -32px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MernStack
+            Developer!</h6>
+        <p
+            style="font-size: 20px; color: #fff; margin-right: 32px; opacity: 0; animation: slideRight 1.5s ease forwards;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Soluta esse, dignissimos, inventore neque minus
+            ad voluptate, assumenda ratione facere doloribus expedita dolorum laborum dicta pariatur quas.
+            Rem ex, voluptate cupiditate, vero ipsum cum placeat,
+            laboriosam iusto ab obcaecati minima deserunt accusantium
+            debitis consequatur veritatis dolores omnis perferendis nemo iste. Error quo voluptatem
+            perspiciatis obcaecati animi ipsum repellendus
+            inventore dolore impedit eos quas modi laboriosam
+            repellat, facilis quod iste expedita, explicabo</p>
+        <button
+            style="background-color: aqua; border-radius: 12px; padding: 10px; border: none; margin-top: 13px; margin-left: 300px; opacity: 0; animation: slideTop 1s ease forwards; animation-delay: 2s;">More
+            About Me</button>
+    </div>
+
+
+    <h5 style="margin-top: 89px; text-align: center; color: #fff; font-size: 45px;">My <span
+            style="color: aqua;">Services</span></h5>
+    <div class="services-container" id="service">
+        <div class="services-main">
+            <i class='bx  bx-crop'></i>
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse ipsum amet qui iusto. Autem,
+                aspernatur soluta nobis provident tenetur velit placeat facere doloribus incidunt non voluptatum,
+                voluptatem rerum dolore blanditiis laudantium</p>
+            <button
+                style="background-color: aqua; padding: 10px; border-radius: 25px; border: none; margin-top: 25px; margin-left: 14px; font-size: 18px; box-shadow: 1px 1px 1px 1px aqua; opacity: 0; animation: slideTop 1s ease forwards;">Learn
+                More</button>
+        </div>
+
+        <div class="services-main">
+            <i class='bx  bx-code-alt'></i>
+            <h1>Modern UI/UX design</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse ipsum amet qui iusto. Autem,
+                aspernatur soluta nobis provident tenetur velit placeat facere doloribus incidunt non voluptatum,
+                voluptatem rerum dolore blanditiis laudantium </p>
+            <button
+                style="background-color: aqua; padding: 10px; border-radius: 25px; border: none; margin-top: 25px; margin-left: 14px; font-size: 18px; box-shadow: 1px 1px 1px 1px aqua; opacity: 0; animation: slideTop 1s ease forwards;">Learn
+                More</button>
+        </div>
+
+        <div class="services-main">
+            <i class="fa-brands fa-apple"></i>
+            <h1>App Desi</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse ipsum amet qui iusto. Autem,
+                aspernatur soluta nobis provident tenetur velit placeat facere doloribus incidunt non voluptatum,
+                voluptatem rerum dolore blanditiis laudantium </p>
+            <button
+                style="background-color: aqua; padding: 10px; border-radius: 25px; border: none; margin-top: 25px; margin-left: 14px; font-size: 18px; box-shadow: 1px 1px 1px 1px aqua; opacity: 0; animation: slideTop 1s ease forwards;">Learn
+                More</button>
+        </div>
+    </div>
+
+    <div class="skills-container" id="skill">
+        <!-- Technical Skills -->
+        <div class="skills-main">
+            <h1 style="color: white; text-decoration: underline; font-size: 30px; text-align:center;">Technical Skills
+            </h1>
+            <br>
+            <i class="fa-brands fa-html5"></i>
+            <h3 style="font-size: 15px;">HTML</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+            <br>
+
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3 style="font-size: 15px;">CSS</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+            <br>
+
+            <i class="fa-brands fa-bootstrap"></i>
+            <h3 style="font-size: 15px;">BOOTSTRAP</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+            <br>
+
+            <i class="fa-brands fa-react"></i>
+            <h3 style="font-size: 15px;">REACT</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="skills-main">
+            <h1 style="color: white; text-decoration: underline; font-size: 30px; text-align:center;">Professional
+                Skills</h1>
+            <br>
+            <i class="fa-solid fa-people-group"></i>
+            <h3 style="font-size: 15px;">Team Work</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+            <br>
+
+            <i class="fa-solid fa-comments"></i>
+            <h3 style="font-size: 15px;">Communication</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+            <br>
+
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3 style="font-size: 15px;">Creativity</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+            <br>
+
+            <i class="fa-solid fa-clock"></i>
+            <h3 style="font-size: 15px;">Time Management</h3>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 120px; text-align: center; color: #fff;">Latest <span style="color: #00ffcc;">Projects</span>
+    </h1>
+
+    <div class="project-container" id="project">
+        <div class="project-img">
+            <img src="./InvoZone Mobile App Development.jpg" alt="">
+        </div>
+        <div class="project-img">
+            <img src="./_Master Full Stack Web Development_ Build Stunning Websites with Expert Website Development Tips_.jpg"
+                alt="">
+        </div>
+        <div class="project-img">
+            <img src="./What is the Internet of Things_.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+        <div class="contact-main">
+            <h3 style="font-size: 34px; color: #fff;">Contact <span style="color: #00ffcc;">Me</span></h3>
+
+            <h4 style="margin-left: -260px; color: #fff; margin-top: 36px;">Let's Work Together</h4>
+            <p style="margin-left: 130px; color: #fff; margin-top: 23px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatibus maxime enim ut necessitatibus veniam animi sequi quis harum maiores fuga,
+                quam hic explicabo beatae in suscipit dignissimos, saepe consequuntur eveniet nulla soluta, nihil
+                tempore dolorem alias! Neque cupiditate repellat cum. In dolorem sint deleniti nulla, iusto </p>
+
+            <h5 style="color: #fff; margin-left: -450px;"><i class="fa-solid fa-message"
+                    style="font-size: 16px; padding: 5px 32px;"></i>contact@gmail.com</h5>
+            <h5 style="color: #fff; margin-left: -520px;"><i class="fa-solid fa-phone"
+                    style="font-size: 16px; padding: 5px 32px;"></i>0123456789</h5>
+
+            <div class="home-icon2">
+                <a href="" style="--i:7"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" style="--i:8"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" style="--i:9"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" style="--i:10"><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+
+        <div class="contact-main">
+            <form action="" method="post" style="padding: 32px;">
+                <input type="text" name="name" placeholder="Enter Your Name"><br><br>
+
+                <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+
+                <input type="text" name="subject" placeholder="Enter Your Subject"><br><br>
+
+                <textarea name="message" id="message" placeholder="Enter Your Message" rows="5"
+                    cols="20"></textarea><br><br>
+
+                <button
+                    style="padding: 8px 150px; border-radius: 25px; background-color: #00ffcc; border: #00ffcc; box-shadow: 2px 2px 2px #00ffcc;">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <p style="margin-top: 65px; color: #fff; background-color: darkslategray; padding: 6px; text-align: center;">
+        Developed With Love By Khushi Dave @2025</p>
+
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["Frontend Developer", "MernStack Developer", "Vloger"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>

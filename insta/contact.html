@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #4381a5;
+            padding: 12px;
+        }
+
+        .container .logo h1 {
+            color: white;
+            font-weight: bold;
+            margin-left: 82px;
+        }
+
+        .content .main {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            color: white;
+        }
+
+        .content .main :hover {
+            text-decoration: underline;
+            color: white;
+            cursor: pointer;
+        }
+
+        .content .main button {
+            background-color: white;
+            color: #4381a5;
+            border-radius: 2px;
+            border: none;
+            padding: 5px;
+        }
+
+        .main li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .content .main button:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            text-decoration: none;
+        }
+
+        .contact-container {
+            background-color: white;
+            box-shadow: 0 0 10px grey;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .contact-container h5 {
+            font-size: 23px;
+        }
+
+        .contact-container p {
+            color: #4381a5;
+            font-size: 19px;
+        }
+
+        label{
+            font-size: 18px;           
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #4381a5;
+            color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Tourest</h1>
+        </div>
+        <div class="content">
+            <ul class="main">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="tours.html">TOURS</a></li>
+
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="home.html">CONTACT US</a></li>
+
+                <button type="submit">REGISTER NOW</button>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="contact-container">
+        <h5>Contact Us</h5>
+        <p>If you have any questions or inquiries, feel free to reach out to us by filling the form below.</p> <br>
+
+        <form action="" method="post">
+            <label for="">Name:</label>
+            <input type="text" name="name" id="name"> <br><br>
+
+            <label for="">Email:</label>
+            <input type="email" name="email" id="email"> <br><br>
+
+            <label for="">Subject:</label>
+            <input type="text" name="subject" id="subject"> <br><br>
+
+            <label for="">Message:</label>
+            <textarea name="message" id="message" rows="5" cols="50"></textarea> <br><br>
+
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>

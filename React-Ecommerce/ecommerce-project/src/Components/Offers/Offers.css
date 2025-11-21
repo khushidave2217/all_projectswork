@@ -1,0 +1,36 @@
+.offers{
+    margin-top: 40px;
+    position: relative;
+    
+}
+.offers-left {
+   position: absolute;
+   margin-top: 40px;
+   margin-left: 20PX;
+}
+.offers-left h1{
+    font-size: 15px;
+}
+.offers-left h2{
+    font-size: 25px;
+    color: orangered;
+   
+}
+.offers-left p{
+    font-size: 15px;
+
+}
+.offers-left button{
+    padding: 7px;
+    background-color: orangered;
+    margin-top: 20px;
+    margin-left: -160px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.offers-right img{
+   width: 100%;
+   height: 50vh;
+}

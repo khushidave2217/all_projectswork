@@ -1,0 +1,67 @@
+.browser-container {
+    margin-top: 83px;
+}
+
+.browser-container h4 {
+    text-align: center;
+    color: darkcyan;
+    font-size: 20px;
+}
+
+.browser-container p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.grid-container .grid {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container .grid:hover {
+  background-color: darkcyan;
+}
+
+.grid-container .grid:hover h2,
+.grid-container .grid:hover p {
+  color: white;
+  background-color: transparent; 
+  box-shadow: none; 
+}
+
+
+.grid img {
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 10vh;
+}
+
+.grid-container .grid h2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 17px;
+}
+
+.grid-container .grid p {
+    font-weight: 400;
+    font-size: 15px;
+    color: darkcyan;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    border-radius: 25px;
+
+}

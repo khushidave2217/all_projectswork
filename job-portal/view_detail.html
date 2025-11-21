@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 14px;
+            box-shadow: 8px 8px 8px white;
+        }
+
+        .nav-container .nav {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .nav-container .nav li {
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .nav-container .nav li:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(44, 152, 219);
+        }
+
+        .nav-container .nav li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .nav-container button {
+            font-size: 18px;
+            padding: 10px 40px;
+            background-color: rgb(44, 152, 219);
+            color: white;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        .nav-container button:hover {
+            background-color: black;
+        }
+
+        .first-h1 {
+            text-align: center;
+            margin-top: 34px;
+            font-weight: 100;
+        }
+        .job-container{
+            padding: 50px;
+            background-color: white;
+           margin-left: 120px;
+           margin-right: 120px;
+           margin-top: 20px;  
+        }
+        .job-main{
+            margin-left: 10px;
+        }
+        .job-main h2{
+           padding: 20px;
+           font-weight: 100;
+        }
+        .job-main h6{
+            margin-left: 20px;
+            margin-top: -10px;
+            font-size: 20px;
+            color:  rgb(31, 154, 230);
+        }
+        .job-main h6 a{
+            color: rgb(31, 154, 230);
+            text-decoration: none;
+        }
+        .job-main h5{
+            margin-left: 15px;
+            margin-top: 2px;
+            font-size: 17px;
+            font-weight: 50;
+        }
+        .job-section{
+            margin-top: 20px;
+            background-color: #e0e0e0;
+            margin: 30px;
+            border-radius: 1px;
+            padding: 15px;
+        }
+        .job-section h3{
+            margin-left: 20px;
+           padding: 10px;
+           font-size: 23px;
+           font-weight: bold;
+        }
+        .job-section h5{
+            font-size: 20px;
+            margin-left: 25px;
+            font-weight: 50;
+            margin-top: -10px;
+        }
+        .job-requirement{
+            margin-left: 30px;
+        }
+        .job-requirement ul{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .job-requirement ul li{
+            margin-left: 20px;  
+        }
+        .job-requirement{
+            margin-top: 20px;
+        }
+        .job-description h3{
+            margin-left: 30px;
+            margin-top: 30px;
+            font-size: 22px;
+        }
+         .job-description p{
+            margin-left: 30px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .job-description ul{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .job-description ul li{
+            font-size: 20px;
+        }
+        .job-description button{
+            margin-left: 39px;
+            margin-top: 23px;
+            font-size: 20px;
+           padding: 5px;
+            border: none;
+            width: 20%;
+            background-color:  rgb(39, 140, 202);
+            color: white;
+        }
+          .footer-container{
+            margin-top: 64px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 60px;
+         }
+         .footer-main{
+            margin: 15px;
+         }
+         .footer-main ul{
+            list-style-type: none;
+            padding: 13px;
+         }
+         .footer-main ul li{
+            padding: 10px;
+            font-size: 20px;
+            color: black;
+         }
+         .footer-main ul li i{
+            color: rgb(31, 154, 230);
+            font-size: 20px;
+         }
+         .copyright-container{
+            text-align: center;
+            margin-top: 34px;
+            font-size: 23px;
+            background-color: white;
+            padding: 15px;
+         }
+    </style>
+</head>
+
+<body style="background-color:#e0e0e0;">
+     <div class="nav-container">
+        <div class="logo" style="margin-left: -40px;">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h3 class="logo-text">JobHunt</h3>
+        </div>
+
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="jobs.html">All Jobs</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="">Account</a></li>
+            <button>Post Jobs</button>
+        </ul>
+
+
+    </div>
+    <h1 class="first-h1">job detail</h1>
+
+    <div class="job-container">
+        <div class="job-main">
+            <h2>Senior Web Developer</h2>
+            <h6><a href="about_company.html">IT infosys co.</a></h6>
+            <h5><i class="fa-solid fa-location-dot"></i>Mumbai,India</h5>
+        </div>
+
+        <div class="job-section">
+            <h3>Salary</h3>
+            <h5>10000-25000 per month</h5>
+
+            <h3>Benefits</h3>
+            <h5>work from home,health insurance</h5>
+
+            <h3>job Type</h3>
+            <h5>part-time</h5>
+
+            <h3>Schedule</h3>
+            <h5>day shift</h5>
+        </div>
+
+        <div class="job-requirement">
+            <h1>Requirements</h1>
+            <ul>
+                <li>education graduate</li>
+                <li>age : 25+</li>
+                <li>language : hindi,english</li>
+                <li>experience : 3+ years</li>
+            </ul>
+        </div>
+
+        <div class="job-requirement">
+            <h1>Qualifications</h1>
+            <ul>
+                <li>Bachelor's(preferred)</li>
+                <li>PHP 1 Year(preferred)</li>
+                <li>web design 1 year(preferred)</li>
+                <li>wordpress 1 year(preferred)</li>
+                <li>total work: 3 year(Required)</li>
+            </ul>
+        </div>
+        <div class="job-requirement">
+            <h1>Skills</h1>
+            <ul>
+                <li>html5 and css3</li>
+                <li>javascript</li>
+                <li>node.js</li>
+                <li>react.js</li>
+                <li>php</li>
+                <li>mysql</li>
+            </ul>
+        </div>
+
+        <div class="job-description">
+            <h3>job Description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, atque neque sed a, beatae assumenda impedit provident ea, mollitia reprehenderit aut libero sit unde dolores!</p>
+
+            <ul>
+                <li>Hiring 2 candidate for this role</li>
+                <li>posted 2 days ago</li>
+            </ul>
+            <button>Apply Now</button>
+        </div>
+    </div>
+
+       <div class="footer-container">
+        <div class="footer-main">
+            <h1>Quick Links</h1>
+           <ul>
+                <li><i class="fa-solid fa-angle-right"></i>home</li>
+                <li><i class="fa-solid fa-angle-right"></i>filter search</li>
+                <li><i class="fa-solid fa-angle-right"></i>all jobs</li>
+                <li><i class="fa-solid fa-angle-right"></i>about us</li>
+                <li><i class="fa-solid fa-angle-right"></i>contact us</li>
+
+           </ul>
+        </div>
+
+         <div class="footer-main">
+            <h1>Extra Links</h1>
+           <ul>
+                <li><i class="fa-solid fa-angle-right"></i>account</li>
+                <li><i class="fa-solid fa-angle-right"></i>login</li>
+                <li><i class="fa-solid fa-angle-right"></i>register</li>
+                <li><i class="fa-solid fa-angle-right"></i>post job</li>
+                <li><i class="fa-solid fa-angle-right"></i>dashboard</li>
+
+           </ul>
+        </div>
+
+         <div class="footer-main">
+            <h1>Follow Us</h1>
+           <ul>
+                <li><i class="fa-brands fa-facebook-f"></i>Facebook</li>
+                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                <li><i class="fa-brands fa-linkedin-in"></i>linkedin</li>
+                <li><i class="fa-brands fa-youtube"></i>Youtube</li>
+
+           </ul>
+        </div>
+       </div>
+
+       <p class="copyright-container">CopyRight @ 2023 by Khushi Dave | all rights reserved|</p>
+</body>
+
+</html>

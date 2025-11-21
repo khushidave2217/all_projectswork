@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+             box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 90px;
+            height: auto;
+            margin-right: -8px;
+        }
+
+        .logo span {
+            color: orangered;
+        }
+
+        .nav-main {
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            margin-right: 40px;
+        }
+
+        .nav li {
+            font-size: 20px;
+        }
+
+        .nav li:hover {
+            color: orangered;
+        }
+         .nav li a{
+            text-decoration: none;
+            color: black;
+        }
+        .main-content {
+            background-image: url(./hero4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 80vh;
+            width: 100%;
+        }
+
+        .main h3 {
+            margin-left: 78px;
+            font-size: 23px;
+        }
+
+        .main h5 {
+            font-size: 35px;
+            margin-left: 82px;
+        }
+
+        .main h5 span {
+            color: orangered;
+        }
+
+        .main p {
+            margin-left: -680px;
+            font-size: 20px;
+            margin-top: 23px;
+        }
+
+        .main button {
+            margin-top: 35px;
+            margin-left: 80px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            padding: 12px;
+            width: 10%;
+            font-size: 15px;
+        }
+
+        .main button:hover {
+            background-color: orangered;
+            color: #fff;
+            border: 1px solid orangered;
+        }
+
+        .brand-images {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            margin-top: 23px;
+        }
+
+        .brand-images img {
+            width: 120px;
+            height: auto;
+        }
+
+        .item-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .item {
+            position: relative;
+        }
+
+
+        .item img {
+            width: 370px;
+            height: 80vh;
+        }
+
+        .item h3 {
+            position: absolute;
+            top: 190px;
+            left: 10%;
+            font-size: 25px;
+        }
+
+        .item button {
+            position: absolute;
+            top: 250px;
+            left: 20%;
+            background-color: transparent;
+            border: 1px solid #000;
+            border-radius: 25px;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .item button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .feature-content {
+            margin-top: 37px;
+        }
+
+        .feature-content h5 {
+            font-size: 27px;
+            text-align: center;
+            color: orangered;
+        }
+
+        .feature-content p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .feature-detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            gap: 20px;
+        }
+
+        .feature-main img {
+            height: 50vh;
+        }
+        .feature-main img:hover{
+            opacity: 0.5;
+        }
+        .feature-icon {
+            display: inline-block;
+            margin-left: 90px;
+            color: gold;
+        }
+
+        .feature-main h3,
+        p {
+            text-align: center;
+        }
+
+        .feature-main button {
+            text-align: center;
+            top: 70%;
+            left: 50%;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            visibility: hidden;
+
+        }
+
+        .feature-main:hover button {
+            visibility: visible;
+            opacity: 1;
+            background-color: orangered;
+        }
+
+        .feature-main:hover {
+            background-color: #f4f4f4;
+        }
+
+        .banner-main img{
+            width: 100%;
+            height: 50vh;
+        }
+        .banner-main h3{
+            margin-top: -220px;
+            margin-left: 40px;
+            color: white;
+            font-size: 17px;
+        }
+        .banner-main h2{
+            margin-top: -1px;
+            margin-left: 40px;
+            color: white;
+            font-size: 46px;
+        }
+        .banner-main button{
+            background-color: orangered;
+            color: white;
+            padding: 12px;
+            border: none;
+            margin-top: 12px;
+            margin-left: 32px;
+        }
+        .other-content{
+            margin-top: 70px;
+            text-align: center;
+        }
+        .other-content h5{
+            font-size: 29px;
+            color: orangered;
+        }
+        .other-content p{
+            font-size: 21px;
+            margin-top: 20px;
+        }
+        .footer-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background-color: grey;
+            padding: 80px;
+        }
+        .footer p{
+            font-size: 20px;
+            margin-left: 1px;
+        }
+        .footer h6{
+            font-size: 24px;
+        }
+        .footer ul li{
+            list-style-type: none;
+            margin: 10px;
+        }
+        .footer h2{
+            margin-top: -80px;
+        }
+        .footer h1{
+            margin-top: -120px;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="./download (1).jpg" alt="">
+            <h1>rymo<span>.</span></h1>
+        </div>
+        <div class="nav-main">
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                 <li><a href="shop.html">Shop</a></li>
+                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bucket"></i>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main">
+            <br> <br><br><br><br><br>
+            <h3>New Arrivals</h3>
+            <h5><span>Best Price </span>This Year</h5>
+            <p>Explore a wide range of products at unbeatable prices. <br>
+                Fast delivery & secure payments – shop now!"</p>
+
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="brands">
+        <div class="brand-images">
+            <img src="./Adidas Logo Stock Illustrations – 593 Adidas Logo Stock Illustrations, Vectors & Clipart - Dreamstime.jpg"
+                alt="">
+            <img src="./Nike.jpg" alt="">
+            <img src="./Zara logo.jpg" alt="">
+            <img src="./List of 22 Top Sunglasses Brands and Their Logos.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="item-container">
+        <div class="item">
+            <img src="./Women's Shoes _ Sneakers _ Chunky Sneakers.jpg" alt="">
+            <h3>Extreme Rare Sneakers</h3>
+
+            <button type="submit">Shop Now</button>
+
+
+        </div>
+        <div class="item">
+            <img src="./Teen Girl Elegant Casual Commuter Short Suit, 3D Flower Knitted Vest And Trouser Jumpsuit With Belt.jpg"
+                alt="">
+            <h3>Awesome Blank Outfit</h3>
+
+            <button type="submit">Shop Now</button>
+
+
+        </div>
+        <div class="item">
+            <img src="./Round Pointer Quartz Watch.jpg" alt="">
+            <h3>Sportwear Up To 50% Off</h3>
+
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="feature-content">
+        <h5>Our Featured</h5>
+        <p>Here You can check out our new products with fair price on rymo.</p>
+    </div>
+    <div class="feature-detail">
+        <div class="feature-main">
+            <img src="./1.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Sport Boot</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+
+        <div class="feature-main">
+            <img src="./2.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Sport Boot</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./3.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Sport Boot</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./4.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Sport Boot</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="banner-main">
+        <img src="./banner.jpg" alt="">
+        <h3>MID SEASON'S SALE</h3>
+        <h2>Autumn Collection <br> Up To 20%  OFF</h2>
+         <button type="submit">Shop Now</button>
+    </div>
+
+     <div class="other-content">
+        <h5>Dresses & Jumpsuit</h5>
+        <p>Here You can check out our new products with fair price on rymo.</p>
+    </div>
+    <div class="feature-detail">
+        <div class="feature-main">
+            <img src="./d1.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Dress</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+
+        <div class="feature-main">
+            <img src="./d2.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Dress</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./d3.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Dress</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./d4.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Dress</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+
+
+       <div class="other-content">
+        <h5>Best Watches</h5>
+        <p>Here You can check out our new products with fair price on rymo.</p>
+    </div>
+    <div class="feature-detail">
+        <div class="feature-main">
+            <img src="./w1.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+
+        <div class="feature-main">
+            <img src="./w2.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./w3.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./w4.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+
+
+       <div class="other-content">
+        <h5>Running Shoes</h5>
+        <p>Here You can check out our new products with fair price on rymo.</p>
+    </div>
+    <div class="feature-detail">
+        <div class="feature-main">
+            <img src="./st5.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+
+        <div class="feature-main">
+            <img src="./st6.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./st7.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div class="feature-main">
+            <img src="./st8.jpg" alt="">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Watch</h3>
+            <p>$92.00</p>
+            <button type="submit">Shop Now</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="logo">
+            <img src="./download (1).jpg" alt="">
+            <h1>rymo<span>.</span></h1>
+        </div>
+        <p>Explore a wide range of products at unbeatable prices. <br>
+                Fast delivery & secure payments – shop now!"</p>
+            </div>
+
+            <div class="footer">
+                <h6>Featured</h6>
+                <ul>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>BOYS</li>
+                    <li>GIRLS</li>
+                    <li>NEW ARRIVALS</li>
+                    <li>SHOES</li>
+                    <li>CLOTHS</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <h2>Contact Us</h2>
+                <h4>ADDRESS</h4>
+                <P>123, Main Road ,Opp Iskon, Ahmedabad</P>
+                 <h4>PHONE</h4>
+                <P>(123)458-7890</P>
+                 <h4>EMAIL</h4>
+                <P>MAIL@gmail.com</P>
+            </div>
+
+          
+
+        </div>
+    </footer>
+
+        </body>
+</html>

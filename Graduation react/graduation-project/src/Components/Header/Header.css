@@ -1,0 +1,43 @@
+.header-section{
+    background-image: url(../../assets/back1.jpg);
+    height: 400px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-position: right;
+    background-size:300px;
+    background-repeat: no-repeat;
+}
+.header-section h2{
+    margin-left: 45px;
+   padding-top: 80px;
+   color: darkcyan;
+   font-size: 18px;
+}
+.header-section h1{
+    margin-left: 45px;
+    font-size: 27px;
+}
+.header-section p{
+    margin-left: 45px;
+}
+.header-section button{
+    margin-left: 45px;
+    padding: 5px 15px 10px 15px;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.header-section button .icon{
+    margin-left: 10px;
+}
+.header-section .visit{
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+   background-color: white;
+    color: darkcyan;
+    border: 1px solid black;
+    border-radius: 4px;
+   
+}

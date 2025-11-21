@@ -1,0 +1,30 @@
+
+.about-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.about {
+  text-align: center;
+  width: 250px;
+}
+
+.about-icon {
+  font-size: 40px;
+  color: #c59d5f; 
+  margin-bottom: 10px;
+}
+
+.about h6 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.about p {
+  font-size: 14px;
+  color: #666;
+}

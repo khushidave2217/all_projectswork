@@ -1,0 +1,91 @@
+.hero-section {
+  width: 76% !important;       
+  height: 70vh !important;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 80px;
+  
+  overflow: hidden;
+  border-radius: 0;     
+  margin: 0;           
+}
+
+.hero-title{
+
+    margin-top: 130px;
+    font-size: 50px !important;
+    color: #fff;
+    margin-left: 20px !important;
+    font-weight: 600;
+}
+.hero-title span{
+  margin-left: 310px;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(0px); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 1100px;
+  padding-left: 80px;    /* jo jarur hoy to */
+}
+
+/* top line */
+.hero-top-text {
+  padding-top: -30px !important;
+  font-size: 30px !important;
+  font-weight: 400;
+  margin-bottom: -120px;         /* 210px hataavo */
+  margin-left: 250px;        /* 320px hataavo */
+  color: #fff;
+  margin-top: 120px;
+}
+
+/* main heading */
+.hero-content h1 {
+  font-size: 55px !important;
+  color: #fff;
+  margin-left: 0;        /* 210px hataavo */
+  font-weight: 600;
+  margin-top: 120px;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  border: none;
+  background: lightseagreen;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 25px !important;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 322px !important;        /* 450px hataavo */
+  margin-top: 20px;
+}
+.hero-btn {
+  padding: 12px 25px;
+  border: none;
+  background: lightseagreen;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 450px;
+}
+
+.hero-btn:hover {
+  background: #ff6a00;
+}

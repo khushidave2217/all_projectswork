@@ -1,0 +1,65 @@
+/* Background Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 👉 Popup TOP taraf aavse */
+  padding-top: 50px;       /* 👉 Thodu niche gap */
+  z-index: 9999;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #fff;
+  color: #333;
+  width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  animation: popupDrop 0.3s ease-out;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  background: lightseagreen;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: white;
+  color: lightseagreen;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes popupDrop {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
